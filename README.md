@@ -2,7 +2,7 @@
 Differential Evolution Inverse Kinematics of n-Link Arm Robot in 2D Space with Python and Matplotlib 
 
 ## Animation
-![This is an image](https://github.com/BarelangFC/DE-Inverse-Kinematics-2D/blob/main/de.gif)
+![This is an image](https://github.com/BarelangFC/DE-Inverse-Kinematics-2D/blob/main/ikde.gif)
 
 ## Requirement
 1. Python 3
