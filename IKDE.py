@@ -118,7 +118,7 @@ def onclick(event):
 
     limits = 4
     # Inverse Kinematics
-    err, angle = DE(target, angle, link, limits, max_gen= 100)
+    err, angle = DE(target, angle, link, limits, max_gen= 300)
     
     P = FK(angle, link)
     for i in range(len(link)):
@@ -127,7 +127,7 @@ def onclick(event):
         ax.plot([start_point[0,3], end_point[0,3]], [start_point[1,3], end_point[1,3]], linewidth=5)
         draw_axis(ax, scale=10, A=P[i+1], draw_2d=True)
     
-    if (err > 1): 
+    if (err > 0.1): 
        print("IK Error")
     else:
        print("IK Solved")
